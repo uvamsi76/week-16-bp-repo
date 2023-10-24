@@ -1,3 +1,5 @@
+import { Update } from "@mui/icons-material";
+
 import {
   AllWalletsList,
   WalletListBlockchainSelector,
@@ -13,7 +15,7 @@ import { ContactRequests, Contacts } from "../Messages/Contacts";
 import { Requests } from "../Messages/Requests";
 
 import { CreateMenu } from "./AddConnectWallet/CreateMenu";
-import { CreateMnemonic } from "./AddConnectWallet/CreateMnemonic"
+import { CreateMnemonic } from "./AddConnectWallet/CreateMnemonic";
 import { ImportMenu } from "./AddConnectWallet/ImportMenu";
 import { ImportMnemonic } from "./AddConnectWallet/ImportMnemonic";
 import { ImportSecretKey } from "./AddConnectWallet/ImportSecretKey";
@@ -105,6 +107,10 @@ export function SettingsNavStackDrawer({
           <NavStackScreen
             name="preferences-trusted-sites"
             component={(props: any) => <PreferencesTrustedSites {...props} />}
+          />
+          <NavStackScreen
+            name="updates"
+            component={(props: any) => <Update {...props} />}
           />
           <NavStackScreen
             name="preferences-solana"
